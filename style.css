@@ -19,10 +19,14 @@
   padding: 20px;
 }
 
-.hide {
-  /*  display: none; */
+. hide {
+display: none;
 }
 
 .noVis {
     visibility: hidden;
+}
+
+button {
+    margin:10px;
 }
