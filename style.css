@@ -1,0 +1,28 @@
+#highscores {
+/* background-color: green; */
+}
+
+#landingCard {
+  /*  display: none; */
+}
+.card {
+    margin: 0 auto;
+    float: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+#questionSlide {
+  /*  display: block; */
+  background-color: aliceblue;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.hide {
+  /*  display: none; */
+}
+
+.noVis {
+    visibility: hidden;
+}
