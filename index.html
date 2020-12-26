@@ -9,77 +9,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
     <!-- page nav with time element -->
     <nav class="navbar navbar-expand-lg navbar-lught bg-light">
         <div class="container-md">
-            <a class="navbar-brand" id="highscores" href="#">HighScores</a>
-            <div id="timer">
-                <p>Time: <span class="navbar-text" id="time">0</span></p>
-            </div>
+            <a class="navbar-brand" id="highscores" href="scoreboard.html">HighScores</a>
+            <div ><span class="navbar-text" id="time"></span></div>
         </div>
     </nav>
 
     <!-- click here to start quiz -->
-    <section class="card text-center" id="landingCard">
+    <div class="card text-center" id="landingCard">
         <h1>Quiz Challenge</h1>
         <div class="card-body">
             <p>
                 Answer the following questions within the time limit. That's about it. Thanks.
             </p>
-            <button type="button" class="btn btn-primary">Start your Quiz!</button>
+            <button id="btnstartquiz" type="button" class="btn btn-primary">Start your Quiz!</button>
         </div>
-    </section>
+    </div>
 
     <!-- form group with questions -->
-    <section class="container hide">
+    <div class="container">
         <div class="row">
-            <div class="col-10" id="questionSlide">
+            <div class="col-12 noVis" id="questionSlide">
                 <h1 id="questionTitle"></h1>
-                <div class="btn-group-vertical" role="group">
-                    <button type="button" class="btn btn-primary"></button>
-                    <button type="button" class="btn btn-primary"></button>
-                    <button type="button" class="btn btn-primary"></button>
-                    <button type="button" class="btn btn-primary"></button>
-                    <div id="qConfirm" class="noVis">
-                        <p></p>
-                    </div>
+                <div id="choiceGroup" class="choiceGroup">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="end" class="card text-center hide">
+    <div id="end" class="card text-center noVis">
         <h1>End of Quiz!</h1>
         <div class="card-body">
             <p>Your final score is:<span id="score"></span></p>
             <input id="nameInput" class="form-control mb-2" type="text" placeholder="Enter Initals">
             <button id="enterScorebtn" type="submit" class="btn btn-primary">Submit Score</button>
         </div>
-        <div id="errIndicate" class="noVis">
-            <p></p>
-        </div>
-    </section>
-
-    <section id="scoreBoard" class="card text-center hide">
-        <h1>High Scores</h1>
-        <div>
-
-        </div>
-        <div class="btn-group-md" role="group">
-            <button id="reset" type="button" class="btn btn-primary">Go Back</button>
-            <button id="clrScore" type="button" class="btn btn-primary">Clear Scores</button>
-        </div>
-
-    </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
